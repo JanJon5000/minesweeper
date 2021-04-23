@@ -7,7 +7,7 @@ def menu(screen, dictOfButtons: list):
     pygame.init()
     # general settings of a screen - icon, caption, size, background color
     pygame.display.set_icon(pygame.image.load('img\\MineIcon.png'))
-    pygame.display.set_caption('Sapper')
+    pygame.display.set_caption('Minesweeper')
     screen = pygame.display.set_mode((400, 400))
     screen.fill(colorsRGB.grey1)
 
@@ -18,7 +18,7 @@ def menu(screen, dictOfButtons: list):
     # a list of a button names
     buttonsList = ['beginner', 'normal', 'hard', 'impossible', 'game rules']
     # title creation
-    titleSurface = titleFont.render('SAPPER', False, colorsRGB.black)
+    titleSurface = titleFont.render('MINESWEEPER', False, colorsRGB.black)
     titleSurfaceRect = titleSurface.get_rect()
     screen.blit(titleSurface, (200-(titleSurfaceRect.centerx-titleSurfaceRect.x), 0))
     # a loop which creates buttons and text on them
