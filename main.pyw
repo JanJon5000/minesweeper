@@ -48,7 +48,7 @@ while running:
                         beforeTheGame = datetime.datetime.now()
 
         #
-        # sapper oriented event handling
+        # minesweeper oriented event handling
         #
         if currentWindow in ['beginner', 'normal', 'hard', 'impossible']:
             if event.type == pygame.QUIT:

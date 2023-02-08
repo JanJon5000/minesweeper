@@ -33,7 +33,7 @@ def menu(screen, dictOfButtons: list):
 
 def lvl(screen, board: boardClass, boardButtons: dict):
     pygame.display.set_icon(pygame.image.load('img\\MineIcon.png'))
-    pygame.display.set_caption('Sapper')
+    pygame.display.set_caption('Minesweeper')
     screen = pygame.display.set_mode((board.sizeX*50, board.sizeY*50))
     screen.fill(colorsRGB.grey1)
     for y in range(board.sizeY):
